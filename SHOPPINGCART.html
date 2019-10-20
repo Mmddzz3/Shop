@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>SHOPPING CART</title>
+	  <style>
+	         h1 {
+                   text-shadow: 2px 2px;
+                }
+	  img:hover {
+                   opacity: 0.5;
+                   filter: alpha(opacity=50); 
+                }
+	      body  {
+                   background-image: url("https://png.pngtree.com/svg/20161125/levis_771497.png");
+                   background-repeat: no-repeat;
+                   background-attachment: fixed;
+                   background-position: center;
+                   background-size: 200px 200px;
+                }
+	   .atchimg {
+                  background: url("https://www.logolynx.com/images/logolynx/ae/aeb9be78bcbf1e2a80c5c4ce1fac84c5.png") 
+				  right bottom no-repeat, url("https://cdn.shopify.com/s/files/1/2178/8149/articles/Levis.blog_1400x.progressive.png.jpg?v=1540848826") 
+				  left top repeat;
+                  padding: 15px;
+                  opacity: 0.6;
+                  filter: alpha(opacity=60);
+                }
+     .transbox  {
+                  margin: 5%;
+                  font-weight: bold;
+                  color:#99ffff;
+                  font-size : 30px;
+                }
+        .button{
+                  background-color: white;
+                  border: 2px #558000;
+                  color: #558000;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                  margin: 4px 2px;
+                  cursor: pointer;
+                }
+  .button a:hover{
+	              color: #558000;
+                }
+	  </style>			
+</head>	  
+<body style="background-color: #99cc00">
+       
+      <h1> ADD TO CART </h1>
+
+	  <h3>Personal Details</h3>
+	  <form action="Shoppingcart.html" method="post" autocomplete="on">
+	         First Name : <input type="text" name="First_name" autofocus required /> <br><br>
+			 Last Name  : <input type="text" name="Last_name"/required> <br><br>
+             Address      : <textarea  name="Address" rows="4" cols="50" required ></textarea> 
+			 <br><br>
+			 City       : 
+			 <select name="City" required>
+			    <option value="  "> Select City </option>
+				<option value="Mumbai"> Mumbai </option>
+				<option value="Indore"> Indore </option>
+				<option value="Ahemdabad"> Ahemdabad </option>
+			</select>	
+			<br><br>
+			State       : <name = "State" required>
+			<datalist id="State">
+			    <option value="Maharashtra"> Maharashtra </option>
+				<option value="Madhya Pradesh"> Madhya Pradesh </option>
+				<option value="Gujarat"> Gujarat </option>
+			</datalist>	
+			<input type="text" name="State" list="State">
+			
+            <br><br>
+            Email-id    : <input type="email " name="Email-id" placeholder="example:john@gmail.com"/> <br><br>
+            Mobile No.  : <input type ="number" name ="Mobile No." placeholder="10 digits" required/><br><br>
+	 		
+		<h2 > Cart Details </h2>
+		<div class = "atchimg">
+		<div class = "transbox">
+            Gender       <br>   <input type="radio" name="gender" value="male"> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <input type="radio" name="gender" value="other"> Other<br>
+			<br>
+			Quantity    : 
+                          <select name="Quantity" required>
+                            <option value= " "> Select Quantity </option>
+							<option value= " 1"> 1 </option>
+							<option value= " 2"> 2 </option>
+							<option value= " 3"> 3 </option>
+							<option value= " 4"> 4 </option>
+							<option value= " 5"> 5 </option>
+						  </select >
+            <br><br>
+         	Choose Size    <br>
+                            <input type="checkbox" name="Choose Size" value="XS"> XS <br>
+							<input type="checkbox" name="Choose Size" value="S"> S <br>
+							<input type="checkbox" name="Choose Size" value="M"> M <br>
+                            <input type="checkbox" name="Choose Size" value="L" > L<br>
+							<input type="checkbox" name="Choose Size" value="XL" > XL <br>
+							<input type="checkbox" name="Choose Size" value="XXL" > XXL<br>
+			Choose Colour : <input type="color"/>				
+        </div>
+			<br><br> 
+	    </div>		
+           			
+        <h2> Payment Details </h2>
+		<div class = "reph">     
+			 Card Type : 
+			               <select name="Card Type" required>
+						     <option value=" "> Select Card Type </option>
+							 <option value="Debit"> Debit </option>
+							 <option value="Credit"> Credit </option>
+                            </select>
+			<br><br>				
+			 Card Number   : <input type="number" name="Card Number" placeholder="16 digits" required/>	
+            <br><br>
+             CVV Number    : <input type="number" name="CVV Number" placeholder="3 digits" required/>	
+         </div>    
+			<br><br>	 
+         <h2> User Login Details </h2>
+		 
+             Username : <input type="text" name="Username" required\>
+             <br><br>
+             Password : <input type="password" name ="Password" required\>	
+         		 
+        <br><br> 	
+         <br>		 
+         <h2> Delivery Details</h2>
+		    <br><br>
+			    Date of Delivery : <input type="date"/>
+				Time of Delivery : <input type="time"/>
+		    <br><br> 		
+		 <br><br>
+		 <br><br>
+		 <center>		 
+         <input type="submit"  value="Submit" class = " button">
+		 <br><br>
+         <input type="reset"  formnovalidate value="Reset" class = "button">
+		 <br><br>
+         <button class = "button"><a href="index.html">BACK</a></button>		 
+		 <br><br>
+		 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREv5N7Dd4NgVAXARGDfkZ3RILKcGfSV9JaxsEqg3BwL3Bpi6V2HA" ></img>
+		 <center>
+    </form>
+</body>
+</html>	

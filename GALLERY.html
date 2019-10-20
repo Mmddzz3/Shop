@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GALLERY</title>
+<style>
+       div.gallery  {
+                      margin: 5px;
+                      border: 1px solid #000000;
+                      float: left;
+                      width: 300px; 
+                    }
+ div.gallery:hover  {
+                      border: 1px solid #ffffff;
+                    }
+   div.gallery img  {
+                       width: 100%;
+                       height: 300px;
+					}
+           div.desc {
+                       padding: 15px;
+                       text-align: center;
+                    }
+             div.tr {
+                       width: 100px;
+                       height: 100px;
+                       -webkit-transition-timing-function: linear;
+                       -webkit-transition: width 2s; 
+                       transition: width 2s;
+                       transition-timing-function: linear;
+                    }
+       div.tr:hover {
+                      width: 300px;
+                      height : 300px;
+                    }
+         div.transf {
+                     width: 100px;
+                     height: 100px;
+                     -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+                     transition: width 2s, height 2s, transform 2s;
+                    }
+   div.transf:hover {
+                      width: 300px;
+                      height: 300px;
+                      -webkit-transform: rotate(360deg);
+                      transform: rotate(360deg);
+                    } 
+   div.trans2:hover {
+                      -webkit-transform: scale(1.5);
+                    }	 
+    div.trans3:hover{
+                      -webkit-transform: rotateZ(90deg); 
+                      transform: rotateZ(90deg);
+                    } 
+div.translate:hover {
+                      -webkit-transform: translate(50px,100px); 
+                    } 
+   div.rotate:hover {
+                      -webkit-transform: rotate(60deg);
+                    }
+     div.skewx:hover{
+                      -webkit-transform: skewX(40deg);
+                    }
+     div.skewy:hover{
+                      -webkit-transform: skewY(20deg);
+                    }
+			.button {
+                      background-color: white;
+                      border: 2px #558000;
+                      color: #558000;
+                      padding: 15px 32px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: 16px;
+                      margin: 4px 2px;
+                      cursor: pointer;
+                    }
+	 .button a:hover{
+	                   color: #558000;
+                    }
+</style>
+</head>
+
+<body style="background-color : #99cc00">
+<h1 style="">GALLERY</h1>
+<div class="gallery">
+    <div class = "tr"><img src="https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/Search/224x336/309691.jpg?X56"></img></div>
+    <div class="desc">Women's Jeans Collection</div>
+</div>
+<div class="gallery">
+    <div class= "transf"><img src= " http://imagecdn.rawrdenim.com/attachments/images/000/000/075/large/6335.jpg?1392744007"></img></div>
+    <div class="desc">Men's Jeans Collection</div>
+</div>
+<div class="gallery">
+    <div class="trans2"><img src= "http://cdn.shopify.com/s/files/1/0767/3853/products/levis_sherlinglined_jacket_001_grande.jpg?v=1521303173"></img></div>
+    <div class="desc">Men's Jacket Collection</div>
+</div>
+<div class="gallery">
+    <div class = "trans3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSljsgSdRUy2xgUNgNSdtucDWsfogN7eadI5BrP16VWp1-1I82N"></img></div>
+    <div class="desc">Women's Jacket Collection</div>
+</div>
+<div class="gallery">
+    <div class = "translate"><img src="https://lsco.scene7.com/is/image/lsco/Levis/clothing/173690263-front-pdp.jpg?$grid_desktop_full$"></img></div>
+    <div class="desc">Women's T-Shirt Collection</div>
+</div>
+<div class="gallery">
+    <div class = "rotate "><img src="https://lsco.scene7.com/is/image/lsco/Levis/clothing/360150011-front-pdp.jpg?$grid_desktop_full$"></img></div>
+    <div class="desc">Men's T-Shirt Collection</div>
+</div>
+<div class="gallery">
+    <div class = "skewx"><img src="http://www.dougliscreative.com/images//pic/LE211S007-G11-035796.jpg"></img></div>
+    <div class="desc">Women's Shoes Collection</div>
+</div>
+<div class="gallery">
+    <div class = "skewy"><img src="https://www.joylot.com/item_images/Levi-s-Men-s-Ethan-Nappa-UL-Levis-Sneakers-Shoes-531490766-432_531490767l.jpg">
+	</img></div>
+    <div class="desc">Men's Shoes Collection</div>
+</div>
+
+<center>
+<button class= "button"><a href ="index.html">BACK</a></button></center> 
+</body>
+</html>
+
