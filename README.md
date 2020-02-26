@@ -13,3 +13,5 @@
 4. Gallery
 
 5. Shopping Cart
+
+![](images/home.png)
