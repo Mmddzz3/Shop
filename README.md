@@ -4,12 +4,12 @@
 * The information,images are taken from internet.
 
 * Following are the pages created:
-1. Homepage:
+1. Homepage
 
-2. About Us:
+2. About Us
 
-3. What's New:
+3. What's New
 
-4. Gallery:
+4. Gallery
 
-5. Shopping Cart:
+5. Shopping Cart
